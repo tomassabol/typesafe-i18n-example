@@ -1,0 +1,14 @@
+{
+  "name": "typesafe-i18n-example",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "type-check": "bun index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "dependencies": {
+    "typescript": "^5.9.3"
+  }
+}

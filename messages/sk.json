@@ -1,0 +1,711 @@
+{
+  "Navigation": {
+    "Shipments": "Shipmenty",
+    "Products": "Produkty",
+    "Conveyor": "Dopravník",
+    "Positions": "Pozície",
+    "Relay": "Relay service",
+    "BoxLabels": "Boxové štítky",
+    "Settings": "Prehľad nastavení"
+  },
+  "Pages": {
+    "Auth": {
+      "Title": "Auth",
+      "SignIn": "Prihlásiť sa"
+    },
+    "Shipments": {
+      "ID": {
+        "Title": "Shipment",
+        "Details": {
+          "Title": "Detaily"
+        },
+        "Products": {
+          "Title": "Produkty"
+        },
+        "Conveyor": {
+          "Title": "Dopravník"
+        },
+        "Relay": {
+          "Title": "Relay"
+        }
+      },
+      "Title": "Shipmenty",
+      "SelectedShipmentsNo": "Počet vybraných shipmentov:",
+      "DownloadAll": "Stiahnuť všetky",
+      "DownloadSelected": "Stiahnuť vybrané",
+      "DownloadPackingSlip": "Stiahnuť packing slip",
+      "DownloadShippingLabel": "Stiahnuť doručovací štítok",
+      "CopyShipmentId": "Kopírovať ID shipmentu",
+      "ViewShipment": "Zobraziť shipment",
+      "PackingSlipDownloaded": "Packing slip stiahnutý",
+      "PackingSlipsDownloaded": "Packing slipy stiahnuté",
+      "NoSelectedShipments": "Neboli vybrané žiadne shipmenty",
+      "ShippingLabelDownloaded": "Doručovací štítok stiahnutý",
+      "ColumnSettings": "Nastavenia stĺpcov",
+      "AlertDialog": {
+        "Title": "Stiahnuť",
+        "Content": "Naozaj chcete stiahnuť packing slipy? Packing slipy pre nasledujúce shipmenty už boli stiahnuté:",
+        "Buttons": {
+          "Cancel": "Zrušiť",
+          "Download": "Stiahnuť"
+        }
+      },
+      "Update": {
+        "Title": "Aktualizovať stav shipmentu",
+        "Toasts": {
+          "ShipmentUpdated": "Shipment aktualizovaný"
+        }
+      },
+      "SendToAutostore": "Odoslať do Autostoru",
+      "SendingToAutostore": "Odosielanie do Autostore...",
+      "SendingToAutostoreError": "Odoslanie do Autostore zlyhalo",
+      "SentToAutostoreWarning": "Nasledúce shipmenty sa nepodarilo odoslať do Autostore:",
+      "SentToAutostore": "Shipment(y) odoslané do Autostore",
+      "NotAllowedToSendToAutostore": "Nasledúce shipmenty nie je možné poslať do Autostore:",
+      "Max10Shipments": "Do Autostore môžete poslať najviac 10 shipmentov naraz.",
+      "PickDeadlineFormatter": {
+        "NoDeadline": "Vyber deadline",
+        "One": "Vybrany {count} deadline",
+        "Many": "Vybrane {count} deadlines"
+      },
+      "MultiPickingDialog": {
+        "Title": "Multi Picking",
+        "Description": "Nahrajte CSV súbory na extrahovanie ID shipmentov alebo zadajte ich manuálne",
+        "UploadCSVFiles": "Nahrať CSV súbory",
+        "DragAndDrop": "Sem nahrajte CSV súbory alebo kliknite na vyberanie viacerých súborov",
+        "DropFiles": "Sem nahrajte CSV súbory",
+        "ClickToUpload": "alebo kliknite na vyberanie viacerých súborov",
+        "SelectFiles": "Vybrať súbory",
+        "Processing": "Spracovanie...",
+        "ProcessedXFiles": "Spracovaných {count} súborov",
+        "TotalFiles": "Celkovo: {count} unikátnych ID shipmentov",
+        "ManualEntry": "Manuálny input",
+        "EnterShipmentIds": "Zadajte ID shipmentov (jeden na riadok alebo oddelené čiarkami, medzerami alebo bodkami)",
+        "AddShipmentIds": "Pridať shipment ID",
+        "PressCtrlEnter": "Stlačte Ctrl+Enter pre pridanie",
+        "CurrentShipmentIds": "ID shipmentov: {count}",
+        "PrintMultiPickingPicklist": "Tlač multi picking picklist",
+        "ShipmentsNotFound": "Nasledujúce shipment ID neboli nájdené: {count}",
+        "PackingSlipsGenerated": "Packing slipy budú generované. Pre viac informácií, sledujte",
+        "GeneratingPackingSlips": "Generovanie packing slipov...",
+        "NoShipmentsFoundToProcess": "Nenašli sa žiadne shipmenty na spracovanie"
+      },
+      "ShipmentIdsDialog": {
+        "TooManyShipmentIdsWarning": "Môžete vyhladať maximálne 80 shipmentov"
+      }
+    },
+    "Products": {
+      "Title": "Produkty",
+      "ID": {
+        "Title": "Produkt",
+        "Details": {
+          "Title": "Detaily"
+        },
+        "Quantities": {
+          "Title": "Množstvá"
+        },
+        "Positions": {
+          "Title": "Produktové pozície"
+        }
+      }
+    },
+    "Conveyor": {
+      "Title": "Conveyor",
+      "ConveyorShipment": {
+        "Title": "Conveyor shipment",
+        "Update": {
+          "Title": "Aktualizovať conveyor shipment",
+          "Update": "Aktualizovať",
+          "Toasts": {
+            "ShipmentUpdated": "Conveyor shipment aktualizovaný"
+          }
+        }
+      }
+    },
+    "Relay": {
+      "Title": "Relay service",
+      "Settings": {
+        "Title": "Relay nastavenia",
+        "DeadlineDialog": {
+          "Title": {
+            "Create": "Pridať deadline",
+            "Update": "Aktualizovať deadline"
+          },
+          "Store": "Store",
+          "CarrierDeadline": "Carrier deadline",
+          "SelectDeadline": "Vybrať deadline",
+          "SelectStore": "Vybrať store",
+          "SearchShippingMethods": "Hľadať doručovacie metódy",
+          "SearchStores": "Hľadať stores",
+          "Submit": "Odoslať",
+          "Updating": "Aktualizovanie",
+          "Success": {
+            "Create": "Deadline úspešne vytvorený",
+            "Update": "Deadline úspešne aktualizovaný"
+          },
+          "Failed": {
+            "Create": "Nepodarilo sa vytvoriť deadline",
+            "Update": "Nepodarilo sa aktualizovať deadline"
+          },
+          "Loading": {
+            "Create": "Vytváranie",
+            "Update": "Aktualizovanie"
+          }
+        },
+        "DeleteDeadlineAlert": {
+          "Title": "Vymazať deadline",
+          "Content": "Naozaj chcete vymazať tento deadline? Táto akcia sa nedá vrátiť späť.",
+          "Buttons": {
+            "Cancel": "Zrušiť",
+            "Deleting": "Vymazávanie",
+            "Delete": "Vymazať"
+          },
+          "Loading": "Vymazávanie deadline...",
+          "Success": "Deadline úspešne vymazaný",
+          "Failed": "Nepodarilo sa vymazať deadline"
+        },
+        "FeatureFlags": {
+          "OmsShipments": {
+            "Label": "OMS Shipmenty",
+            "Description": "Vypnutie alebo zapnutie prioritizácie pre OMS shipmenty"
+          },
+          "AutostoreShipments": {
+            "Label": "Autostore Shipments",
+            "Description": "Vypnutie alebo zapnutie prioritizácie pre OMS shipmenty pre Autostore"
+          },
+          "B2bShipments": {
+            "Label": "B2B Shipments",
+            "Description": "Vypnutie alebo zapnutie prioritizácie pre B2B shipmentov"
+          },
+          "BulkyShipments": {
+            "Label": "Oversized/Overweight Shipments",
+            "Description": "Vypnutie alebo zapnutie prioritizácie pre Oversized/Overweight zónu"
+          },
+          "FastTrack": {
+            "Label": "Fast Track",
+            "Description": "Vypnutie alebo zapnutie prioritizácie pre Fast Track zónu"
+          },
+          "AutostoreKosice": {
+            "Label": "Autostore Kosice",
+            "Description": "Vypnutie alebo zapnutie prioritizácie pre Autostore Kosice zónu"
+          },
+          "NextOrderApi": {
+            "Label": "Paperless API",
+            "Description": "Vypnutie alebo zapnutie prioritizácie pre všetky zóny"
+          },
+          "AutostoreShipmentsScheduler": {
+            "Label": "Autostore scheduler",
+            "Description": "Vypnutie alebo zapnutie prioritizácie pre Autostore"
+          },
+          "AutostoreB2bShipmentsScheduler": {
+            "Label": "Autostore B2B scheduler",
+            "Description": "Vypnutie alebo zapnutie prioritizácie B2B shipmentov pre Autostore"
+          },
+          "AutostoreShipmentsSchedulerQueryLimit": {
+            "Label": "Limit dopytu pre Autostore scheduler",
+            "Description": "Nastaví limit pre počet shipmentov, ktoré budú automaticky naplánované pre Autostore. Plánovanie prebieha každú minútu.",
+            "TempDescription": "Táto funkcionalita je dočasné vypnutá z dôvodu interného testovania a zberu dát."
+          },
+          "MultiPickingPort1": {
+            "Label": "Multi picking port 1",
+            "Description": "Vypnutie alebo zapnutie multi picking portu 1"
+          },
+          "MultiPickingPort2": {
+            "Label": "Multi picking port 2",
+            "Description": "Vypnutie alebo zapnutie multi picking portu 2"
+          },
+          "MultiPickingQueryLimit": {
+            "Label": "Multi picking query limit",
+            "Description": "Nastaví limit pre počet shipmentov, ktoré môžu byť automaticky naplánované pre Autostore multi picking. Plánovanie prebieha každých 15 minút."
+          },
+          "ApplyChanges": "Aplikovať zmeny",
+          "FeatureFlagsUpdated": "Relay nastavenia boli aktualizované",
+          "FailedToUpdateFeatureFlags": "Nepodarilo sa aktualizovať relay nastavenia",
+          "Reset": "Reset",
+          "AutostoreEnabled": "Aktivované pre Autostore",
+          "RelayEnabled": "Aktivované pre Relay",
+          "CarrierDeadline": "Deadline prepravcu",
+          "CustomerDeadline": "Deadline zákazníka",
+          "CreatedBy": "Vytvorené",
+          "AutostoreEnabledDescription": "Aktivované pre Autostore scheduler",
+          "RelayEnabledDescription": "Aktivované pre Relay service - paperless API a Autostore scheduler",
+          "SearchShippingMethods": "Hľadať doručovacie metódy",
+          "SearchStores": "Hľadať stores",
+          "EmptyShippingMethods": "Žiadne doručovacie metódy nenájdené. Resetujte hľadanie na všetky doručovacie metódy.",
+          "EmptyStores": "Žiadne stores nenájdené. Resetujte hľadanie na všetky stores."
+        }
+      },
+      "FeatureFlags": {
+        "Title": "Feature flags"
+      },
+      "ShippingMethods": {
+        "Title": "Doručovacie metódy"
+      },
+      "Stores": {
+        "Title": "Stores"
+      },
+      "ID": {
+        "Title": "Relay shipment"
+      }
+    },
+    "Positions": {
+      "Title": "Pozície",
+      "Import": {
+        "Button": "Import",
+        "Dialog": {
+          "Title": "Import pozícií",
+          "UploadCSVFiles": "Nahrať CSV súbory",
+          "Processing": "Spracovanie CSV...",
+          "ProcessedXFiles": "Spracovaných {count} súborov",
+          "TotalFiles": "Celkovo: {count} unikátnych ID shipmentov",
+          "ManualEntry": "Manuálny input",
+          "EnterShipmentIds": "Zadajte ID shipmentov (jeden na riadok alebo oddelené čiarkami, medzerami alebo bodkami)",
+          "AddShipmentIds": "Pridať shipment ID",
+          "PressCtrlEnter": "Stlačte Ctrl+Enter pre pridanie",
+          "DragAndDrop": "Sem nahrajte CSV súbory alebo kliknite na vyberanie viacerých súborov",
+          "DropFiles": "Sem nahrajte CSV súbory",
+          "ClickToUpload": "alebo kliknite na vyberanie viacerých súborov",
+          "SelectFiles": "Vybrať súbory",
+          "CreatePositions": "Vytvoriť pozície",
+          "Toasts": {
+            "Loading": "Vytváranie pozícií...",
+            "Success": "{count} pozícií bolo úspešne vytvorených",
+            "PartialSuccess": "{count} pozícií bolo úspešne vytvorených. Niektoré pozície sa nepodarilo vytvoriť: {errors}",
+            "Error": "Nepodarilo sa vytvoriť pozície. {errors}",
+            "AlreadyProcessed": "Súbory {files} už boli spracované"
+          }
+        }
+      },
+      "ID": {
+        "Title": "Pozícia",
+        "Details": {
+          "Title": "Detaily"
+        },
+        "Products": {
+          "Title": "Produkty na pozícii"
+        },
+        "Toasts": {
+          "PositionDeleted": "Pozícia bola úspešne vymazaná"
+        },
+        "Update": "Aktualizovať",
+        "AlertDialog": {
+          "Title": "Vymazať pozíciu",
+          "Content": "Naozaj chcete vymazať túto pozíciu? Táto akcia sa nedá vrátiť späť.",
+          "Buttons": {
+            "Cancel": "Zrušiť",
+            "Delete": "Vymazať"
+          }
+        }
+      },
+      "Create": {
+        "Title": "Vytvoriť pozíciu",
+        "Buttons": {
+          "Submit": "Odoslať",
+          "ViewPosition": "Zobraziť pozíciu"
+        },
+        "Toasts": {
+          "PositionCreated": "Pozícia bola úspešne vytvorená"
+        }
+      },
+      "Update": {
+        "Title": "Aktualizovať pozíciu",
+        "Buttons": {
+          "Submit": "Odoslať",
+          "ViewPosition": "Zobraziť pozíciu"
+        },
+        "Options": {
+          "Update": "Aktualizovať",
+          "Delete": "Vymazať"
+        },
+        "Toasts": {
+          "PositionUpdated": "Pozícia bola úspešne aktualizovaná"
+        }
+      }
+    },
+    "BoxLabels": {
+      "Title": "Boxové štítky",
+      "PrintDialog": {
+        "Title": "Tlač boxových štítkov",
+        "BoxSize": "Veľkosť krabice",
+        "LastBoxId": "Posledné ID krabice (voliteľné)",
+        "LastBoxIdDescription": "Zanechajte prázdne pre použitie posledného ID krabice zo systému",
+        "Quantity": "Množstvo",
+        "Example": "Príklad",
+        "Buttons": {
+          "Print": "Tlač štítkov",
+          "Cancel": "Zrušiť"
+        },
+        "Toasts": {
+          "LabelsPrinted": "Boxové štítky boli úspešne vytlačené.",
+          "TooManyRequests": "Príliš veľa požiadaviek, skúste to znova neskôr."
+        }
+      }
+    }
+  },
+  "Tables": {
+    "Shipments": {
+      "ShipmentsTableColumns": {
+        "ID": "ID",
+        "PartialID": "Časť ID",
+        "TrackingNumber": "Tracking number",
+        "OrderReference": "Referencia",
+        "ShipmentId": "Shipment ID",
+        "OrderId": "ID objednávky",
+        "Status": "Status",
+        "PrintStatus": "Stav tlače",
+        "CustomerType": "Typ zákazníka",
+        "Location": "Lokalita",
+        "Store": "Store",
+        "Printed": "Vytlačené",
+        "Oversized": "Oversized",
+        "Overweight": "Overweight",
+        "ShipmentWeight": "Hmotnosť",
+        "Level": "Level",
+        "DeliveryMethod": "Spôsob doručenia",
+        "Country": "Krajina",
+        "CreatedAt": "Vytvorené",
+        "UpdatedAt": "Aktualizované",
+        "AvailableLevels": "Dostupné levely",
+        "CustomerDeadline": "Deadline zákazníka",
+        "Update": {
+          "Update": "Aktualizovať"
+        }
+      },
+      "ShipmentTableValues": {
+        "Printed": {
+          "Yes": "Vytlačené",
+          "No": "Nevytlačené"
+        },
+        "Oversized": {
+          "Yes": "Oversized",
+          "No": "Nie oversized"
+        },
+        "Overweight": {
+          "Yes": "Overweight",
+          "No": "Nie overweight"
+        }
+      },
+      "TrackingDetailsTableColumns": {
+        "TrackingDetails": "Tracking details",
+        "Carrier": "Prepravca",
+        "TrackingNumber": "Tracking number",
+        "BoxpiPackageId": "Boxpi package ID",
+        "TrackingUrl": "Tracking URL"
+      },
+      "OutboundDetailsTable": {
+        "OutboundDetailsTableHeader": "Outbound details",
+        "OutboundDetailsTableColumns": {
+          "PackedAt": "Zabalené",
+          "PackerId": "ID baliča",
+          "PackerName": "Meno baliča",
+          "PrinterId": "ID tlačiarne"
+        }
+      },
+      "LogDetailsTable": {
+        "LogDetailsTableHeader": "Log details",
+        "LogDetailsTableColumns": {
+          "Type": "Typ",
+          "Message": "Správa",
+          "Date": "Dátum",
+          "UserId": "ID používateľa"
+        },
+        "UnavailableLogDetails": "Nedostupné log details",
+        "LogDetailsModalTitle": "Všetky logy",
+        "LogDetailsButton": "Zobraziť všetky logy"
+      }
+    },
+    "Products": {
+      "ProductsTableColumns": {
+        "ID": "ID",
+        "Name": "Názov",
+        "Cost": "Cena",
+        "Oversized": "Oversized",
+        "Overweight": "Overweight",
+        "SKU": "SKU",
+        "EAN": "EAN",
+        "Height": "Výška",
+        "Width": "Šírka",
+        "Length": "Dĺžka",
+        "Weight": "Hmotnosť",
+        "BulkProduct": "Bulk produkt",
+        "BulkQuantity": "Bulk množstvo",
+        "PiecesPerPackage": "Počet kusov v balení",
+        "UpdatedAt": "Aktualizované",
+        "CreatedAt": "Vytvorené",
+        "Quantity": "Množstvo",
+        "AvailableLevels": "Dostupné levely",
+        "NoAutostore": "Kompatibilný s Autostore"
+      },
+      "ProductsTableValues": {
+        "Oversized": {
+          "Yes": "Oversized",
+          "No": "Nie oversized"
+        },
+        "Overweight": {
+          "Yes": "Overweight",
+          "No": "Nie overweight"
+        },
+        "BulkProduct": {
+          "Yes": "Bulk produkt",
+          "No": "Nie je bulk"
+        },
+        "NotFound": "Nenašli sa žiadne produkty",
+        "NoAutostoreValues": {
+          "Yes": "Kompatibilný s Autostore",
+          "No": "Nie je kompatibilný s Autostore"
+        }
+      },
+      "ProductQuantitiesTableColumns": {
+        "Location": "Lokalita",
+        "Quantity": "Množstvo",
+        "UpdatedAt": "Aktualizované"
+      },
+      "ProductQuantitiesTableValues": {
+        "NotFound": "Nenašli sa žiadne množstvá produktov"
+      },
+      "ProductPositionsTableColumns": {
+        "PositionId": "ID pozície",
+        "ProductId": "ID produktu",
+        "Label": "Label",
+        "Location": "Lokalita",
+        "Type": "Typ",
+        "StockQuantity": "Množstvo na sklade",
+        "AvailableQuantity": "Dostupné množstvo",
+        "ReservedQuantity": "Rezervované množstvo",
+        "Level": "Level",
+        "Zone": "Zóna",
+        "Shelf": "Polica",
+        "Regal": "Regál",
+        "Aisle": "Ulička",
+        "Box": "Box",
+        "Palette": "Paleta",
+        "SortOrder": "Sort order",
+        "Distance": "Vzdialenosť",
+        "UpdatedAt": "Aktualizované",
+        "CreatedAt": "Vytvorené"
+      },
+      "ProductPositionsTableValues": {
+        "Box": {
+          "Yes": "Box",
+          "No": "Nie je box"
+        },
+        "Palette": {
+          "Yes": "Paleta",
+          "No": "Nie je paleta"
+        },
+        "NotFound": "Nenašli sa žiadne pozície produktov"
+      },
+      "ProductPositionsTableInfo": {
+        "TotalNumberOfProducts": "Celkový počet produktov",
+        "TotalStockQuantity": "Celkové množstvo (stock) na sklade",
+        "TotalNumberOfProductPositions": "Celkový počet produktových pozícií"
+      }
+    },
+    "Conveyor": {
+      "ConveyorOrdersTableColumns": {
+        "ID": "ID",
+        "Type": "Typ",
+        "Completed": "Dokončené",
+        "BoxId": "Box ID",
+        "MeasuredWeight": "Zmeraná hmotnosť",
+        "WeightMeasuredAt": "Zmerané",
+        "PickerId": "Picker ID",
+        "PickerName": "Meno pickera",
+        "OrderReference": "Referencia objednávky",
+        "Multilevel": "Multilevel",
+        "PackingSlipPrinted": "Tlač PS",
+        "Paperless": "Paperless",
+        "PickingCompleted": "Pickovanie dokončené",
+        "UpdatedAt": "Aktualizované"
+      },
+      "ConveyorOrdersTableValues": {
+        "Type": {
+          "Order": "Objednávka",
+          "Shipment": "Shipment"
+        },
+        "Completed": {
+          "Yes": "Dokončené",
+          "No": "Nedokončené"
+        },
+        "Multilevel": {
+          "Yes": "Multilevel",
+          "No": "Nie multilevel"
+        },
+        "PackingSlipPrinted": {
+          "Yes": "Vytlačené",
+          "No": "Nevytlačené"
+        },
+        "Paperless": {
+          "Yes": "Paperless",
+          "No": "Nie paperless"
+        },
+        "PickingCompleted": {
+          "Yes": "Dokončené",
+          "No": "Nednedokončené"
+        }
+      }
+    },
+    "Positions": {
+      "PositionsTableColumns": {
+        "ID": "ID",
+        "Label": "Label",
+        "PositionType": "Typ pozície",
+        "Location": "Lokalita",
+        "Level": "Level",
+        "Aisle": "Ulička",
+        "Regal": "Regál",
+        "Shelf": "Polica",
+        "Zone": "Zóna",
+        "Width": "Šírka",
+        "Length": "Dĺžka",
+        "Height": "Výška",
+        "Distance": "Vzdialenosť",
+        "SortOrder": "Sort order",
+        "Box": "Box",
+        "Pallet": "Paleta",
+        "Lock": "Lock",
+        "InventoryCheckedAt": "Inventúra skontrolovaná",
+        "UpdatedAt": "Aktualizované",
+        "CreatedAt": "Vytvorené",
+        "AccessType": "Typ prístupu"
+      },
+      "PositionsTableValues": {
+        "Box": {
+          "Yes": "Box",
+          "No": "Nie je box"
+        },
+        "Pallet": {
+          "Yes": "Paleta",
+          "No": "Nie je paleta"
+        },
+        "NotFound": "Nenašli sa žiadne pozície"
+      }
+    },
+    "Relay": {
+      "RelayShipmentsTableColumns": {
+        "ID": "ID",
+        "CustomerType": "Typ zákazníka",
+        "OrderReference": "Referencia",
+        "Type": "Typ",
+        "Status": "Status",
+        "PickingLocation": "Pickovacia zóna",
+        "Store": "Store",
+        "ShippingMethod": "Spôsob doručenia",
+        "Deadline": "Deadline",
+        "AutostoreDeadline": "Autostore deadline",
+        "OrderDate": "Dátum objednávky",
+        "CreatedAt": "Vytvorené",
+        "UpdatedAt": "Aktualizované",
+        "Details": "Detaily",
+        "Note": "Poznámka"
+      },
+      "RelayShipmentsTableValues": {
+        "Type": {
+          "ORDER": "Objednávka",
+          "SHIPMENT": "Shipment"
+        },
+        "ViewDetails": "Zobraziť detaily"
+      }
+    },
+    "BoxLabels": {
+      "BoxLabelsTableColumns": {
+        "BoxType": "Typ krabice",
+        "LastBoxId": "Posledné ID krabice",
+        "UpdatedAt": "Aktualizované",
+        "Options": "Možnosti",
+        "OptionValues": {
+          "PrintOptions": "Možnosti tlače"
+        }
+      }
+    },
+    "StatusHistoryError": {
+      "Title": "Nie je dostupná žiadna história statusov",
+      "Description": "Nenašli sme žiadnu históriu statusov pre tento shipment, alebo nastal problém pri načítaní dát. Skúste to znova alebo kontaktujte podporu, ak problém pretrváva.",
+      "Retry": "Skúsiť znova"
+    }
+  },
+  "Forms": {
+    "Positions": {
+      "Create": {
+        "LocationId": "ID lokácie",
+        "Level": "Level",
+        "Aisle": "Ulička",
+        "Regal": "Regál",
+        "Shelf": "Polica",
+        "Zone": "Zóna",
+        "Width": "Šírka",
+        "Length": "Dĺžka",
+        "Height": "Výška",
+        "Distance": "Vzdialenosť",
+        "SortOrder": "Sort order",
+        "Box": "Krabica",
+        "Pallet": "Paleta",
+        "AccessType": "Typ prístupu"
+      },
+      "Update": {
+        "Width": "Šírka",
+        "Length": "Dĺžka",
+        "Height": "Výška",
+        "Distance": "Vzdialenosť",
+        "SortOrder": "Sort order",
+        "Box": "Krabica",
+        "Pallet": "Paleta",
+        "AccessType": "Typ prístupu"
+      }
+    },
+    "Conveyor": {
+      "Update": {
+        "BoxId": "ID krabice",
+        "PickerId": "ID pickera",
+        "PickerName": "Meno pickera",
+        "IsMultilevel": "Multilevel",
+        "IsPaperless": "Paperless",
+        "IsShippingLabelPrinted": "Doručovací štítok vytlačený",
+        "Submit": "Odoslať",
+        "ViewShipment": "Zobraziť shipment"
+      }
+    },
+    "Shipment": {
+      "Update": {
+        "Title": "Aktualizovať stav shipmentu",
+        "CurrentState": "Aktuálny stav",
+        "NewState": "Po zmene",
+        "Message": "Správa",
+        "MessagePlaceholder": "Zadajte správu",
+        "Submit": "Odoslať",
+        "Updating": "Aktualizujem..."
+      }
+    }
+  },
+  "SignOutAlert": {
+    "Title": "Odhlásiť sa",
+    "Content": "Naozaj sa chcete odhlásiť? Všetky neuložené zmeny budú stratené.",
+    "Buttons": {
+      "Cancel": "Zrušiť",
+      "SignOut": "Odhlásiť sa"
+    }
+  },
+  "Other": {
+    "Unknown": "Neznáme",
+    "None": "Žiadne",
+    "Search": "Hľadať",
+    "Reset": "Reset",
+    "ResetColumns": "Reset stĺpcov",
+    "ResetFilters": "Reset filtrov"
+  },
+  "Pagination": {
+    "Next": "Ďalšie",
+    "DisplayingResults": "Zobrazujem {count} výsledkov",
+    "NoResults": "Žiadne výsledky",
+    "DisplayingResultsFormatter": {
+      "one": "Zobrazujem 1 výsledok",
+      "few": "Zobrazujem {count} výsledky",
+      "many": "Zobrazujem {count} výsledkov"
+    }
+  },
+  "Themes": {
+    "Light": "Svetlý",
+    "Dark": "Tmavý",
+    "System": "Systém"
+  }
+}

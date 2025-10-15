@@ -1,0 +1,711 @@
+{
+  "Navigation": {
+    "Shipments": "Shipments",
+    "Products": "Products",
+    "Conveyor": "Conveyor",
+    "Positions": "Positions",
+    "Relay": "Relay service",
+    "BoxLabels": "Box labels",
+    "Settings": "View Settings"
+  },
+  "Pages": {
+    "Auth": {
+      "Title": "Auth",
+      "SignIn": "Sign In"
+    },
+    "Shipments": {
+      "ID": {
+        "Title": "Shipment",
+        "Details": {
+          "Title": "Details"
+        },
+        "Products": {
+          "Title": "Products"
+        },
+        "Conveyor": {
+          "Title": "Conveyor"
+        },
+        "Relay": {
+          "Title": "Relay"
+        }
+      },
+      "Title": "Shipments",
+      "SelectedShipmentsNo": "Number of selected shipments:",
+      "DownloadAll": "Download all",
+      "DownloadSelected": "Download selected",
+      "DownloadPackingSlip": "Download packing slip",
+      "DownloadShippingLabel": "Download shipping label",
+      "CopyShipmentId": "Copy shipment ID",
+      "ViewShipment": "View shipment",
+      "PackingSlipDownloaded": "Packing slip downloaded",
+      "PackingSlipsDownloaded": "Packing slips downloaded",
+      "NoSelectedShipments": "No shipments selected",
+      "ShippingLabelDownloaded": "Shipping label downloaded",
+      "ColumnSettings": "Column settings",
+      "AlertDialog": {
+        "Title": "Download",
+        "Content": "Are you sure you want to download the packing slips? The packing slips for following shipments have already been downloaded:",
+        "Buttons": {
+          "Cancel": "Cancel",
+          "Download": "Download"
+        }
+      },
+      "MultiPickingDialog": {
+        "Title": "Multi Picking",
+        "Description": "Upload your CSV files to extract shipment IDs or enter them manually",
+        "UploadCSVFiles": "Upload CSV files",
+        "DragAndDrop": "Drag and drop your CSV files or click to select multiple files",
+        "DropFiles": "Drop your CSV files here",
+        "ClickToUpload": "or click to browse multiple files",
+        "SelectFiles": "Select files",
+        "Processing": "Processing CSV...",
+        "ProcessedXFiles": "Processed {count} file",
+        "TotalFiles": "Total: {count} unique shipment IDs",
+        "ManualEntry": "Manual entry",
+        "EnterShipmentIds": "Enter shipment IDs (one per line or separated by commas, spaces, or semicolons)",
+        "AddShipmentIds": "Add shipment IDs",
+        "PressCtrlEnter": "Press Ctrl+Enter to add",
+        "CurrentShipmentIds": "Current shipment IDs: {count}",
+        "PrintMultiPickingPicklist": "Print multi picking picklist",
+        "ShipmentsNotFound": "Following shipment IDs were not found: {count}",
+        "PackingSlipsGenerated": "Packing slips will be generated. For more details, see",
+        "GeneratingPackingSlips": "Generating packing slips...",
+        "NoShipmentsFoundToProcess": "No shipments found to process"
+      },
+      "ShipmentIdsDialog": {
+        "TooManyShipmentIdsWarning": "The maximum number of shipments you can query is 80"
+      },
+      "Update": {
+        "Title": "Update shipment state",
+        "Toasts": {
+          "ShipmentUpdated": "Shipment updated"
+        }
+      },
+      "SendToAutostore": "Send to Autostore",
+      "SendingToAutostore": "Sending to Autostore...",
+      "SendingToAutostoreError": "Failed to send to Autostore",
+      "SentToAutostoreWarning": "Following shipment(s) failed to be sent to Autostore:",
+      "SentToAutostore": "Shipment(s) sent to Autostore",
+      "NotAllowedToSendToAutostore": "Following shipment(s) cannot be sent to Autostore:",
+      "Max10Shipments": "You can only send up to 10 shipments to Autostore at a time.",
+      "PickDeadlineFormatter": {
+        "NoDeadline": "Pick deadline",
+        "One": "{count} deadline selected",
+        "Many": "{count} deadlines selected"
+      }
+    },
+    "Products": {
+      "Title": "Products",
+      "ID": {
+        "Title": "Product",
+        "Details": {
+          "Title": "Details"
+        },
+        "Quantities": {
+          "Title": "Quantities"
+        },
+        "Positions": {
+          "Title": "Product positions"
+        }
+      }
+    },
+    "Conveyor": {
+      "Title": "Conveyor",
+      "ConveyorShipment": {
+        "Title": "Conveyor shipment",
+        "Update": {
+          "Title": "Update conveyor shipment",
+          "Update": "Update",
+          "Toasts": {
+            "ShipmentUpdated": "Conveyor shipment updated"
+          }
+        }
+      }
+    },
+    "Relay": {
+      "Title": "Relay service",
+      "Settings": {
+        "Title": "Relay settings",
+        "DeadlineDialog": {
+          "Title": {
+            "Create": "Add deadline",
+            "Update": "Update deadline"
+          },
+          "Store": "Store",
+          "CarrierDeadline": "Carrier deadline",
+          "SelectDeadline": "Select deadline",
+          "SelectStore": "Select store",
+          "SearchShippingMethods": "Search shipping methods",
+          "SearchStores": "Search stores",
+          "Submit": "Submit",
+          "Updating": "Updating",
+          "Success": {
+            "Create": "Deadline successfully created",
+            "Update": "Deadline successfully updated"
+          },
+          "Failed": {
+            "Create": "Failed to create deadline",
+            "Update": "Failed to update deadline"
+          },
+          "Loading": {
+            "Create": "Creating",
+            "Update": "Updating"
+          }
+        },
+        "DeleteDeadlineAlert": {
+          "Title": "Delete deadline",
+          "Content": "Are you sure you want to delete this deadline? This action cannot be undone.",
+          "Buttons": {
+            "Cancel": "Cancel",
+            "Delete": "Delete",
+            "Deleting": "Deleting"
+          },
+          "Loading": "Deleting deadline...",
+          "Success": "Deadline successfully deleted",
+          "Failed": "Failed to delete deadline"
+        },
+        "FeatureFlags": {
+          "OmsShipments": {
+            "Label": "OMS Shipments",
+            "Description": "Enable or disable prioritization for OMS shipments"
+          },
+          "AutostoreShipments": {
+            "Label": "Autostore Shipments",
+            "Description": "Enable or disable prioritization for OMS shipments to Autostore"
+          },
+          "B2bShipments": {
+            "Label": "B2B Shipments",
+            "Description": "Enable or disable prioritization for B2B shipments"
+          },
+          "BulkyShipments": {
+            "Label": "Oversized/Overweight Shipments",
+            "Description": "Enable or disable prioritization for Oversized/Overweight zone"
+          },
+          "FastTrack": {
+            "Label": "Fast Track",
+            "Description": "Enable or disable prioritization for Fast Track zone"
+          },
+          "AutostoreKosice": {
+            "Label": "Autostore Kosice",
+            "Description": "Enable or disable prioritization for Autostore Kosice zone"
+          },
+          "NextOrderApi": {
+            "Label": "Paperless API",
+            "Description": "Enable or disable prioritization for all zones"
+          },
+          "AutostoreShipmentsScheduler": {
+            "Label": "Autostore scheduler",
+            "Description": "Enable or disable prioritization for Autostore"
+          },
+          "AutostoreB2bShipmentsScheduler": {
+            "Label": "Autostore B2B scheduler",
+            "Description": "Enable or disable prioritization of B2B shipments for Autostore"
+          },
+          "AutostoreShipmentsSchedulerQueryLimit": {
+            "Label": "Autostore scheduler limit",
+            "Description": "Set the limit for the number of shipments or orders, that can be automatically scheduled for Autostore. These are being scheduled every minute.",
+            "TempDescription": "This feature is temporarily disabled due to internal testing and data collection."
+          },
+          "MultiPickingPort1": {
+            "Label": "Multi picking port 1",
+            "Description": "Enable or disable multi picking port 1"
+          },
+          "MultiPickingPort2": {
+            "Label": "Multi picking port 2",
+            "Description": "Enable or disable multi picking port 2"
+          },
+          "MultiPickingQueryLimit": {
+            "Label": "Multi picking query limit",
+            "Description": "Set the limit for the number of shipments or orders, that can be automatically scheduled for Autostore multi picking. These are being scheduled every 15 minutes."
+          },
+          "ApplyChanges": "Apply changes",
+          "FeatureFlagsUpdated": "Relay settings updated",
+          "FailedToUpdateFeatureFlags": "Failed to update relay settings",
+          "Reset": "Reset",
+          "AutostoreEnabled": "Autostore enabled",
+          "RelayEnabled": "Relay enabled",
+          "CarrierDeadline": "Carrier deadline",
+          "CustomerDeadline": "Customer deadline",
+          "CreatedBy": "Created by",
+          "AutostoreEnabledDescription": "Enabled for Autostore scheduler",
+          "RelayEnabledDescription": "Enabled for relay service - paperless API and Autostore scheduler",
+          "SearchShippingMethods": "Search shipping methods",
+          "SearchStores": "Search stores",
+          "EmptyShippingMethods": "No shipping methods found. Reset the search to see all shipping methods.",
+          "EmptyStores": "No stores found. Reset the search to see all stores."
+        }
+      },
+      "FeatureFlags": {
+        "Title": "Feature flags"
+      },
+      "ShippingMethods": {
+        "Title": "Shipping methods"
+      },
+      "Stores": {
+        "Title": "Stores"
+      },
+      "ID": {
+        "Title": "Relay shipment"
+      }
+    },
+    "Positions": {
+      "Title": "Positions",
+      "Import": {
+        "Button": "Import",
+        "Dialog": {
+          "Title": "Import positions",
+          "UploadCSVFiles": "Upload CSV files",
+          "Processing": "Processing CSV...",
+          "ProcessedXFiles": "Processed {count} file",
+          "TotalFiles": "Total: {count} unique shipment IDs",
+          "ManualEntry": "Manual entry",
+          "EnterShipmentIds": "Enter shipment IDs (one per line or separated by commas, spaces, or semicolons)",
+          "AddShipmentIds": "Add shipment IDs",
+          "PressCtrlEnter": "Press Ctrl+Enter to add",
+          "DragAndDrop": "Drag and drop your CSV files or click to select multiple files",
+          "DropFiles": "Drop your CSV files here",
+          "ClickToUpload": "or click to browse multiple files",
+          "SelectFiles": "Select files",
+          "CreatePositions": "Create positions",
+          "Toasts": {
+            "Loading": "Creating positions...",
+            "Success": "{count} positions created successfully",
+            "PartialSuccess": "{count} positions created successfully. Some positions could not be created: {errors}",
+            "Error": "Failed to create positions. {errors}",
+            "AlreadyProcessed": "Files {files} were already processed"
+          }
+        }
+      },
+      "ID": {
+        "Title": "Position",
+        "Details": {
+          "Title": "Details"
+        },
+        "Products": {
+          "Title": "Products at position"
+        },
+        "Toasts": {
+          "PositionDeleted": "Position was successfully deleted"
+        },
+        "Update": "Update",
+        "AlertDialog": {
+          "Title": "Delete position",
+          "Content": "Are you sure you want to delete this position? This action cannot be undone.",
+          "Buttons": {
+            "Cancel": "Cancel",
+            "Delete": "Delete"
+          }
+        }
+      },
+      "Create": {
+        "Title": "Create position",
+        "Buttons": {
+          "Submit": "Submit",
+          "ViewPosition": "View position"
+        },
+        "Toasts": {
+          "PositionCreated": "Position was successfully created"
+        }
+      },
+      "Update": {
+        "Title": "Update position",
+        "Buttons": {
+          "Submit": "Submit",
+          "ViewPosition": "View position"
+        },
+        "Options": {
+          "Update": "Update",
+          "Delete": "Delete"
+        },
+        "Toasts": {
+          "PositionUpdated": "Position was successfully updated"
+        }
+      }
+    },
+    "BoxLabels": {
+      "Title": "Box labels",
+      "PrintDialog": {
+        "Title": "Print box labels",
+        "BoxSize": "Box size",
+        "LastBoxId": "Last box ID (optional)",
+        "LastBoxIdDescription": "Leave empty to use the last box ID from the system",
+        "Quantity": "Quantity",
+        "Example": "Example",
+        "Buttons": {
+          "Print": "Print labels",
+          "Cancel": "Cancel"
+        },
+        "Toasts": {
+          "LabelsPrinted": "Labels printed successfully.",
+          "TooManyRequests": "Too many requests, please try again later."
+        }
+      }
+    }
+  },
+  "Tables": {
+    "Shipments": {
+      "ShipmentsTableColumns": {
+        "ID": "ID",
+        "PartialID": "Partial ID",
+        "TrackingNumber": "Tracking number",
+        "OrderReference": "Reference",
+        "ShipmentId": "Shipment ID",
+        "OrderId": "Order ID",
+        "Status": "Shipment status",
+        "PrintStatus": "Print status",
+        "CustomerType": "Customer type",
+        "Location": "Location",
+        "Store": "Store",
+        "Printed": "Printed",
+        "Oversized": "Oversized",
+        "Overweight": "Overweight",
+        "ShipmentWeight": "Weight",
+        "Level": "Level",
+        "DeliveryMethod": "Delivery method",
+        "Country": "Country",
+        "CreatedAt": "Created At",
+        "UpdatedAt": "Updated At",
+        "AvailableLevels": "Available levels",
+        "CustomerDeadline": "Customer deadline",
+        "Update": {
+          "Update": "Update"
+        }
+      },
+      "ShipmentTableValues": {
+        "Printed": {
+          "Yes": "Printed",
+          "No": "Not printed"
+        },
+        "Oversized": {
+          "Yes": "Oversized",
+          "No": "Not oversized"
+        },
+        "Overweight": {
+          "Yes": "Overweight",
+          "No": "Not overweight"
+        }
+      },
+      "TrackingDetailsTableColumns": {
+        "TrackingDetails": "Tracking details",
+        "Carrier": "Carrier",
+        "TrackingNumber": "Tracking number",
+        "BoxpiPackageId": "Boxpi package ID",
+        "TrackingUrl": "Tracking URL"
+      },
+      "OutboundDetailsTable": {
+        "OutboundDetailsTableHeader": "Outbound details",
+        "OutboundDetailsTableColumns": {
+          "PackedAt": "Packed At",
+          "PackerId": "Packer ID",
+          "PackerName": "Packer name",
+          "PrinterId": "Printer ID"
+        }
+      },
+      "LogDetailsTable": {
+        "LogDetailsTableHeader": "Log details",
+        "LogDetailsTableColumns": {
+          "Type": "Type",
+          "Message": "Message",
+          "Date": "Date",
+          "UserId": "User ID"
+        },
+        "UnavailableLogDetails": "No log details available",
+        "LogDetailsModalTitle": "All logs",
+        "LogDetailsButton": "Show all logs"
+      }
+    },
+    "Products": {
+      "ProductsTableColumns": {
+        "ID": "ID",
+        "Name": "Name",
+        "Cost": "Cost",
+        "Oversized": "Oversized",
+        "Overweight": "Overweight",
+        "SKU": "SKU",
+        "EAN": "EAN",
+        "Height": "Height",
+        "Width": "Width",
+        "Length": "Length",
+        "Weight": "Weight",
+        "BulkProduct": "Bulk product",
+        "BulkQuantity": "Bulk quantity",
+        "PiecesPerPackage": "Pieces per package",
+        "UpdatedAt": "Updated At",
+        "CreatedAt": "Created At",
+        "Quantity": "Quantity",
+        "AvailableLevels": "Available levels",
+        "NoAutostore": "Autostore compatible"
+      },
+      "ProductsTableValues": {
+        "Oversized": {
+          "Yes": "Oversized",
+          "No": "Not oversized"
+        },
+        "Overweight": {
+          "Yes": "Overweight",
+          "No": "Not overweight"
+        },
+        "BulkProduct": {
+          "Yes": "Bulk product",
+          "No": "Not bulk"
+        },
+        "NotFound": "No products found",
+        "NoAutostoreValues": {
+          "Yes": "Autostore compatible",
+          "No": "Autostore incompatible"
+        }
+      },
+      "ProductQuantitiesTableColumns": {
+        "Location": "Location",
+        "Quantity": "Quantity",
+        "UpdatedAt": "Updated At"
+      },
+      "ProductQuantitiesTableValues": {
+        "NotFound": "No product quantities found"
+      },
+      "ProductPositionsTableColumns": {
+        "PositionId": "Position ID",
+        "ProductId": "Product ID",
+        "Label": "Label",
+        "Location": "Location",
+        "Type": "Type",
+        "StockQuantity": "Stock quantity",
+        "AvailableQuantity": "Available quantity",
+        "ReservedQuantity": "Reserved quantity",
+        "Level": "Level",
+        "Zone": "Zone",
+        "Shelf": "Shelf",
+        "Regal": "Regal",
+        "Aisle": "Aisle",
+        "Box": "Box",
+        "Palette": "Palette",
+        "SortOrder": "Sort order",
+        "Distance": "Distance",
+        "UpdatedAt": "Updated At",
+        "CreatedAt": "Created At"
+      },
+      "ProductPositionsTableValues": {
+        "Box": {
+          "Yes": "Box",
+          "No": "Not a box"
+        },
+        "Palette": {
+          "Yes": "Palette",
+          "No": "Not a palette"
+        },
+        "NotFound": "No product positions found"
+      },
+      "ProductPositionsTableInfo": {
+        "TotalNumberOfProducts": "Total number of products",
+        "TotalStockQuantity": "Total stock quantity",
+        "TotalNumberOfProductPositions": "Total number of product positions"
+      }
+    },
+    "Conveyor": {
+      "ConveyorOrdersTableColumns": {
+        "ID": "ID",
+        "Type": "Type",
+        "Completed": "Completed",
+        "BoxId": "Box ID",
+        "MeasuredWeight": "Measured weight",
+        "WeightMeasuredAt": "Measured At",
+        "PickerId": "Picker ID",
+        "PickerName": "Picker name",
+        "OrderReference": "Order Reference",
+        "Multilevel": "Multilevel",
+        "PackingSlipPrinted": "PS printed",
+        "Paperless": "Paperless",
+        "PickingCompleted": "Picking completed",
+        "UpdatedAt": "Updated At"
+      },
+      "ConveyorOrdersTableValues": {
+        "Type": {
+          "Order": "Order",
+          "Shipment": "Shipment"
+        },
+        "Completed": {
+          "Yes": "Completed",
+          "No": "Not completed"
+        },
+        "Multilevel": {
+          "Yes": "Multilevel",
+          "No": "Not multilevel"
+        },
+        "PackingSlipPrinted": {
+          "Yes": "Printed",
+          "No": "Not printed"
+        },
+        "Paperless": {
+          "Yes": "Paperless",
+          "No": "Not paperless"
+        },
+        "PickingCompleted": {
+          "Yes": "Completed",
+          "No": "Not completed"
+        }
+      }
+    },
+    "Positions": {
+      "PositionsTableColumns": {
+        "ID": "ID",
+        "Label": "Label",
+        "PositionType": "Position type",
+        "Location": "Location",
+        "Level": "Level",
+        "Aisle": "Aisle",
+        "Regal": "Regal",
+        "Shelf": "Shelf",
+        "Zone": "Zone",
+        "Width": "Width",
+        "Length": "Length",
+        "Height": "Height",
+        "Distance": "Distance",
+        "SortOrder": "Sort order",
+        "Box": "Box",
+        "InventoryCheckedAt": "Inventory checked at",
+        "Pallet": "Pallet",
+        "Lock": "Lock",
+        "UpdatedAt": "Updated At",
+        "CreatedAt": "Created At",
+        "AccessType": "Access type"
+      },
+      "PositionsTableValues": {
+        "Box": {
+          "Yes": "Box",
+          "No": "Not a box"
+        },
+        "Pallet": {
+          "Yes": "Pallet",
+          "No": "Not a pallet"
+        },
+        "NotFound": "No positions found"
+      }
+    },
+    "Relay": {
+      "RelayShipmentsTableColumns": {
+        "ID": "ID",
+        "CustomerType": "Customer type",
+        "OrderReference": "Reference",
+        "Type": "Type",
+        "Status": "Status",
+        "PickingLocation": "Picking location",
+        "Store": "Store",
+        "ShippingMethod": "Shipping method",
+        "Deadline": "Deadline",
+        "AutostoreDeadline": "Autostore deadline",
+        "OrderDate": "Order date",
+        "CreatedAt": "Created At",
+        "UpdatedAt": "Updated At",
+        "Details": "Details",
+        "Note": "Note"
+      },
+      "RelayShipmentsTableValues": {
+        "Type": {
+          "ORDER": "Order",
+          "SHIPMENT": "Shipment"
+        },
+        "ViewDetails": "View details"
+      }
+    },
+    "BoxLabels": {
+      "BoxLabelsTableColumns": {
+        "BoxType": "Box type",
+        "LastBoxId": "Last box ID",
+        "UpdatedAt": "Updated At",
+        "Options": "Options",
+        "OptionValues": {
+          "PrintOptions": "Print options"
+        }
+      }
+    },
+    "StatusHistoryError": {
+      "Title": "No status history available",
+      "Description": "We couldn't find any status history for this shipment, or there was a problem loading the data. Please try again or contact support if the problem persists.",
+      "Retry": "Try Again"
+    }
+  },
+  "Forms": {
+    "Positions": {
+      "Create": {
+        "LocationId": "Location ID",
+        "Level": "Level",
+        "Aisle": "Aisle",
+        "Regal": "Regal",
+        "Shelf": "Shelf",
+        "Zone": "Zone",
+        "Width": "Width",
+        "Length": "Length",
+        "Height": "Height",
+        "Distance": "Distance",
+        "SortOrder": "Sort order",
+        "Box": "Box",
+        "Pallet": "Pallet",
+        "AccessType": "Access type"
+      },
+      "Update": {
+        "Width": "Width",
+        "Length": "Length",
+        "Height": "Height",
+        "Distance": "Distance",
+        "SortOrder": "Sort order",
+        "Box": "Box",
+        "Pallet": "Pallet",
+        "AccessType": "Access type"
+      }
+    },
+    "Conveyor": {
+      "Update": {
+        "BoxId": "Box ID",
+        "PickerId": "Picker ID",
+        "PickerName": "Picker name",
+        "IsMultilevel": "Multilevel",
+        "IsPaperless": "Paperless",
+        "IsShippingLabelPrinted": "Shipping label printed",
+        "Submit": "Submit",
+        "ViewShipment": "View shipment"
+      }
+    },
+    "Shipment": {
+      "Update": {
+        "Title": "Update shipment state",
+        "CurrentState": "Current state",
+        "NewState": "Change to",
+        "Message": "Message",
+        "MessagePlaceholder": "Enter a message",
+        "Submit": "Submit",
+        "Updating": "Updating..."
+      }
+    }
+  },
+  "SignOutAlert": {
+    "Title": "Sign out",
+    "Content": "Are you sure you want to log out? Any unsaved changes will be lost.",
+    "Buttons": {
+      "Cancel": "Cancel",
+      "SignOut": "Sign out"
+    }
+  },
+  "Other": {
+    "Unknown": "Unknown",
+    "None": "None",
+    "Search": "Search",
+    "Reset": "Reset",
+    "ResetColumns": "Reset columns",
+    "ResetFilters": "Reset filters"
+  },
+  "Pagination": {
+    "Next": "Next",
+    "DisplayingResults": "Displaying {count} results",
+    "NoResults": "No results",
+    "DisplayingResultsFormatter": {
+      "one": "Displaying 1 result",
+      "few": "Displaying {count} results",
+      "many": "Displaying {count} results"
+    }
+  },
+  "Themes": {
+    "Light": "Light",
+    "Dark": "Dark",
+    "System": "System"
+  }
+}
